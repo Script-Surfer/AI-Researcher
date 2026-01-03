@@ -43,7 +43,7 @@ export default  function Home() {
 			</button>
 
 			{result && (
-				<pre className="mt-6 whitespace-pre-wrap bg-gray-100 p-4 rounded">
+				<pre className="mt-6 whitespace-pre-wrap bg-gray-500 p-4 rounded">
 					{result}
 				</pre>
 			)}

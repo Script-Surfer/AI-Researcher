@@ -18,7 +18,7 @@ export async function POST(request: Request){
 
     try {
         const result = await generateText({
-            model: google("gemini-2.5-pro"),
+            model: google("gemini-2.5-flash"),
             prompt
         })
     
@@ -26,6 +26,7 @@ export async function POST(request: Request){
             output: result.text
         })
     } catch (error) {
+        console.log(error)
         return Response.json({ error: "failed to generate research"},{status: 500})
     }
 }
